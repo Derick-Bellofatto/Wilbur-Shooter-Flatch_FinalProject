@@ -5,7 +5,7 @@
 # Due Date:  04/31/2025
 # Course #/Section:   IS 4010-001
 # Semester/Year:  Spring 2025
-# Brief Description of the assignment: Thia assignment decrypts a campus meeting location and movie title then displays the team’s photo taken at that location.
+# Brief Description of the assignment: This assignment decrypts a campus meeting location and movie title then displays the team’s photo taken at that location.
 
 # Brief Description of what this module does: this module decrypts the json file using a key to give our movie title
 # Citations: Perplexity AI
