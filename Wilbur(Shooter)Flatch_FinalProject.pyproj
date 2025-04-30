@@ -1,0 +1,71 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>76c03caf-ff31-4a20-b21b-85265590b0df</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>mainPackage\main.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>Wilbur(Shooter)Flatch_FinalProject</Name>
+    <RootNamespace>Wilbur(Shooter)Flatch_FinalProject</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="decryptionPackage\decrypt.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="decryptionPackage\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="locationPackage\location.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="locationPackage\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="mainPackage\main.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="mainPackage\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="picturePackage\picture.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="picturePackage\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="decryptionPackage\" />
+    <Folder Include="locationPackage\" />
+    <Folder Include="mainPackage\" />
+    <Folder Include="Data\" />
+    <Folder Include="picturePackage\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data\EncryptedGroupHints Spring 2025.json" />
+    <Content Include="Data\TeamsAndEncryptedMessagesForDistribution.json" />
+    <Content Include="Data\team_photo.jpg" />
+    <Content Include="Data\UCEnglish.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
